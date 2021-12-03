@@ -10,9 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Filme{
-  id            Int       @default(autoincrement()) @id
-  nome          String
-  capa          String
-  sinopse       String    
+model Filme {
+  id      Int    @id @default(autoincrement())
+  nome    String
+  capa    String
+  sinopse String
 }
